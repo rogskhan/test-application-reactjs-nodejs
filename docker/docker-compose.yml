@@ -1,0 +1,43 @@
+version: '3.4'
+services:
+  api:
+    container_name: rest-api
+    restart: always
+    build:
+      context: ../rest-api/.
+      dockerfile: ../rest-api/Dockerfile
+    ports:
+      - '3000:3000'
+    links:
+      - mongo
+    volumes:
+      - ../rest-api:/usr/src/app
+  frontend:
+    container_name: frontend-app
+    restart: always
+    build:
+      context: ../frontend-app/.
+      dockerfile: ../frontend-app/Dockerfile
+    ports:
+      - '3001:3000'
+    volumes:
+      - ../frontend-app:/usr/src/app
+  manager:
+    container_name: service-manager-app
+    restart: always
+    build:
+      context: ../service-manager/.
+      dockerfile: ../service-manager/Dockerfile
+    ports:
+      - '8899:8899'
+    links:
+      - mongo
+    volumes:
+      - ../service-manager:/usr/src/app
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - ../service-manager/db:/data/db
