@@ -49,6 +49,9 @@ Follow the below instructions on setting up the project locally.
    ```
 3. Run apis
    ```js
+   npm install
+   ```
+   ```js
    npm start
    ```
 4. Locate to frontend dir
@@ -56,6 +59,9 @@ Follow the below instructions on setting up the project locally.
    cd frontend
    ```
 5. Run react app
+   ```js
+   npm install
+   ```
    ```js
    npm start
    ```
@@ -68,6 +74,9 @@ Follow the below instructions on setting up the project locally.
    cd service-manager
    ```
 8. Run service manager app for scheduled jobs
+   ```js
+   npm install
+   ```
    ```js
    npm start
    ```
