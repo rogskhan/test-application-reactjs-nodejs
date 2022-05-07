@@ -26,17 +26,6 @@ This a sample application to perform following tasks
 
 Follow the below instructions on setting up the project locally.
 
-## To run the app on docker
-
-1. From your terminal change the working dir to docker
-   ```js
-   cd docker
-   ```
-2. To deploy to docker
-   ```js
-   docker-compose up
-   ```
-
 ## To run the app on local
 
 1. Locate to rest-api dir
@@ -86,6 +75,17 @@ Follow the below instructions on setting up the project locally.
 * React App [http://localhost:3001](http://localhost:3001)
 * API Base Url [http://localhost:3000](http://localhost:3000)
 * API Docs Url [http://localhost:3000/docs](http://localhost:3000/docs)
+
+## To run the app on docker
+
+1. From your terminal change the working dir to docker
+   ```js
+   cd docker
+   ```
+2. To deploy to docker
+   ```js
+   docker-compose up
+   ```
 
 ## To test the app
 
