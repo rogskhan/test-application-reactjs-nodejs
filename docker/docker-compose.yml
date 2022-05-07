@@ -13,15 +13,15 @@ services:
     volumes:
       - ../rest-api:/usr/src/app
   frontend:
-    container_name: frontend-app
+    container_name: frontend
     restart: always
     build:
-      context: ../frontend-app/.
-      dockerfile: ../frontend-app/Dockerfile
+      context: ../frontend/.
+      dockerfile: ../frontendpp/Dockerfile
     ports:
       - '3001:3000'
     volumes:
-      - ../frontend-app:/usr/src/app
+      - ../frontend:/usr/src/app
   manager:
     container_name: service-manager-app
     restart: always

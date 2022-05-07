@@ -51,9 +51,9 @@ Follow the below instructions on setting up the project locally.
    ```js
    npm start
    ```
-4. Locate to frontend-app dir
+4. Locate to frontend dir
    ```js
-   cd frontend-app
+   cd frontend
    ```
 5. Run react app
    ```js
